@@ -1,11 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
+import { Button } from 'react-native';
 import { StyleSheet, Text, View } from 'react-native';
+import { sendSms } from './src/sendSms';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text>Bus App</Text>
       <StatusBar style="auto" />
+      <Button title='Buy' onPress={() => console.log('Button pressed')}></Button>
     </View>
   );
 }
